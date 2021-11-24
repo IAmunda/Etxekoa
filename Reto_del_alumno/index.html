@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>INDICE</title>
+  <style type="text/css">
+
+  *{
+    font-family: helvetica;
+  }
+
+  @media screen and (max-height:1440px) {
+    iframe{
+      height: 1200px;
+    }
+  }
+  body{
+    background-image: url("./tendencias-restaurantes-futuro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .boton {
+    background-color: #767638;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .todo{
+    position: relative;
+    display: inline-block;
+  }
+  .enlaces {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .enlaces a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .enlaces a:hover { background-color:  #767638; color: white;}
+  .todo:hover .enlaces {
+    display: block;
+  }
+  .todo:hover .boton {
+    background-color: white; color: #767638;
+  }
+  .boton1{
+    background-color: #6E6E33;
+    color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .todo1{
+    position: relative;
+    display: inline-block;
+  }
+  .enlaces1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .enlaces1 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .enlaces1 a:hover { background-color: #6E6E33; color: white;}
+  .todo1:hover .enlaces1 {
+    display: block;
+  }
+  .todo1:hover .boton1 {
+    background-color: white; color: #6E6E33;
+  }
+
+  .boton2{
+    background-color: #5D5D28;
+    color:white;
+    padding:16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .todo2{
+    position: relative;
+    display: inline-block;
+  }
+  .enlaces2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .enlaces2 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .enlaces2 a:hover { background-color: #5D5D28; color: white;}
+  .todo2:hover .enlaces2 {
+    display: block;
+  }
+  .todo2:hover .boton2 {
+    background-color: white; color: #5D5D28;
+  }
+  iframe{
+    position: center;
+    border: none;
+  }
+  </style>
+</head>
+<body>
+  <div class="todo">
+    <button class="boton" type="button" name="button">Punto de Venta</button>
+    <div class="enlaces">
+      <a href="#">Control de caja</a>
+      <a href="#">Configurar restaurante / bar</a>
+      <a href="#">Configurar gestión de mesas</a>
+      <a href="#">División de facturas a clientes</a>
+      <a href="#">Imprimir facturas</a>
+      <a href="./Integración_propinas/integrar_propinas.html" target="pantalla">Integrar Propinas en el pago</a>
+      <a href="./Impresión_ordenes/imprimir_ordenes.html" target="pantalla">Imprimir Ordenes de cocina y/o bar</a>
+      <a href="./Transferencia_cliente/transferir_cliente.html" target="pantalla">Transferir clientes entre mesas</a>
+      <a href="./Reimpresión/reimprimir.html" target="pantalla">Reimprimir recibos</a>
+      <a href="./Gestion_cajeros/gestionar_cajeros.html" target="pantalla">Gestionar varios cajeros</a>
+      <a href="./Pago Mercury/mercury pago.html" target="pantalla">Aceptar pagos con tarjeta de crédito mediante Mercury </a>
+      <a href="./Descuento/descuento.html" target="pantalla">Aplicar descuentos manuales</a>
+      <a href="./Happy hour/hora.html" target="pantalla">Configurar “happy hour”</a>
+    </div>
+  </div>
+  <div class="todo1">
+    <button class="boton1"type="button" name="button">Sitio Web</button>
+    <div class="enlaces1">
+      <a href="./SEO/SEOxD.html" target="pantalla">Cómo hacer la optimización de motores de búsqueda (SEO)</a>
+      <a href="./Análiticas Google/analiticasgoogle.html" target="pantalla">Cómo rastrear el tráfico de su sitio web en Google Analytics</a>
+      <a href="./Sitio web-tráfico visitas/sitioweb.html" target="pantalla">Cómo rastrear el tráfico de su sitio web</a>
+    </div>
+  </div>
+  <div class="todo2">
+    <button class="boton2" type="button" name="button">Facturacion y Contabilidad</button>
+    <div class="enlaces2">
+      <a href="./Transacciones de monedas/transacciones.html" target="pantalla">Transacciones en diferentes monedas</a>
+      <a href="./Cuentas cobra/cuentas.html" target="pantalla">Cuentas a cobrar y a pagar</a>
+      <a href="./Valoración de inventario/valoracion.html" target="pantalla">	Valoración del inventario</a>
+      <a href="./Obtener posición/obtenerposicion.html" target="pantalla">	Obtener de posición (como balance general, cuentas por pagar pasadas, cuentas por cobrar pasadas)</a>
+    </div>
+  </div>
+  <iframe name="pantalla" width="100%" height="900px"></iframe>
+</body>
+</html>
