@@ -1,0 +1,28 @@
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de respaldo (mantenemos los _old.html para referencia histórica)
+# Pero excluimos otros tipos de respaldo
+*.bak
+*.backup
+*~
+
+# Archivos de IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de configuración local
+.env
+config.local.*
+
+# Archivos de test
+test-server.py
+server.log
