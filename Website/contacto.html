@@ -1,51 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Contacto</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto para información educativa">
+  <title>Contacto - Sistema Educativo</title>
   <style>
-  body{
-    background:lightyellow;
-    width: 100%;
-    text-align: center;
-    caption-side: top;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-  }
+    body {
+      background: #fafad2; /* lightyellow */
+      font-family: 'Arial', Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .header img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+    }
+    
+    h1 {
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #555;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      font-family: inherit;
+      transition: border-color 0.3s ease;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #4A90E2;
+      box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    
+    select {
+      cursor: pointer;
+    }
+    
+    .submit-section {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .info-text {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #4A90E2;
+    }
+    
+    .submit-btn {
+      background-color: #4A90E2;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+      background-color: #357abd;
+    }
+    
+    .submit-btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.3);
+    }
+    
+    /* Required field indicator */
+    .required::after {
+      content: " *";
+      color: #e74c3c;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .container {
+        padding: 1.5rem;
+      }
+      
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
-    <img src="https://sica2.cebanc.com/imagenes/cebanc.jpg">
-  <h1>CONTACTO</h1>
-<form action="registrardatos.php" method="post">
-  Nombre:
-  <input id="primero" type="text" name="nombre" size="20">
-  <br>
-  Apellido:
-  <input id="segundo" type="text" name="Apellido" size="20">
-  <br>
-  Correo electronico:
-  <input type="text" name="Correo electronico" size="20">
-  <br>
-  <p>
-  </p>
-  Seleccione su pais:
-  <select name="pais">
-    <option value="1" selected>España</option>
-    <option value="2">México</option>
-    <option value="3">Argentina</option>
-    <option value="4">Portugal</option>
-    <option value="5">Francia</option>
-  </select>
-  <p>
-  </p>
-  Explique que que información necesita:<br>
-  <textarea name="comentarios" rows="5" cols="60"></textarea>
-  <br>
-  <p>
-  Le responderemos lo antes posible.
-  </p>
-  <input type="submit" value="Enviar">
-</form>
+  <div class="container">
+    <header class="header">
+      <img src="https://sica2.cebanc.com/imagenes/cebanc.jpg" alt="Logo CEBANC">
+      <h1>CONTACTO</h1>
+    </header>
+    
+    <form action="registrardatos.php" method="post" novalidate>
+      <div class="form-group">
+        <label for="nombre" class="required">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required aria-describedby="nombre-help">
+      </div>
+      
+      <div class="form-group">
+        <label for="apellido" class="required">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email" class="required">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="pais">Seleccione su país:</label>
+        <select id="pais" name="pais">
+          <option value="ES" selected>España</option>
+          <option value="MX">México</option>
+          <option value="AR">Argentina</option>
+          <option value="PT">Portugal</option>
+          <option value="FR">Francia</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="comentarios" class="required">Explique qué información necesita:</label>
+        <textarea id="comentarios" name="comentarios" required placeholder="Describa aquí la información que necesita..."></textarea>
+      </div>
+      
+      <div class="info-text">
+        <p><strong>Le responderemos lo antes posible.</strong></p>
+        <p>Los campos marcados con * son obligatorios.</p>
+      </div>
+      
+      <div class="submit-section">
+        <button type="submit" class="submit-btn">Enviar Consulta</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>

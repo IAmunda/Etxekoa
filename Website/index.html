@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Indice</title>
   <meta charset="utf-8">
-  <style>
-    a{
-      font-size: 20px;
-    }
-    h1{
-      font-size: 40px;
-    }
-    li{
-      list-style: none;
-    }
-    li a:hover{
-      color: red;
-    }
-    li a:visited{
-      color: yellow;
-    }
-    body{
-      background: lightyellow;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema educativo - Horarios, listas de clase y fechas relevantes">
+  <title>Sistema Educativo - Inicio</title>
+  <link rel="stylesheet" href="modern-layout.css">
 </head>
 <body>
-  <h1>ÍNDICE</h1>
-  <ul>
-  <li><a href="horario.html" target="ventanadinamica">Horario</li>
-  <li><a href="lista_nombres.html" target="ventanadinamica">Listado de clase</a><br></li>
-  <li><a href="grupos_de_clase.html" target="ventanadinamica">Grupos de clase</a><br></li>
-  <li><a href ="fechas_relevantes.html" target="ventanadinamica">Fechas relevantes</a><br></li>
-  <li><a href="contacto.html" target="ventanadinamica">Formulario</a><br></li>
-</ul>
+  <a href="#main-content" class="skip-nav">Saltar al contenido principal</a>
+  
+  <header class="header">
+    <img src="https://slowlearning.eu/wp-content/uploads/2020/03/cdea_logo.jpg" alt="Logo CDEA">
+  </header>
+
+  <div class="main-container">
+    <nav class="sidebar" aria-label="Navegación principal">
+      <h1>ÍNDICE</h1>
+      <ul>
+        <li><a href="horario.html" target="content-frame">Horario</a></li>
+        <li><a href="lista_nombres.html" target="content-frame">Listado de clase</a></li>
+        <li><a href="grupos_de_clase.html" target="content-frame">Grupos de clase</a></li>
+        <li><a href="fechas_relevantes.html" target="content-frame">Fechas relevantes</a></li>
+        <li><a href="contacto.html" target="content-frame">Formulario de contacto</a></li>
+      </ul>
+    </nav>
+
+    <main class="content" id="main-content">
+      <iframe 
+        name="content-frame" 
+        src="horario.html"
+        title="Contenido principal"
+        aria-label="Área de contenido principal">
+      </iframe>
+    </main>
+  </div>
 </body>
 </html>

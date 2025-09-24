@@ -1,163 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>INDICE</title>
-  <style type="text/css">
-
-  *{
-    font-family: helvetica;
-  }
-
-  @media screen and (max-height:1440px) {
-    iframe{
-      height: 1200px;
-    }
-  }
-  body{
-    background-image: url("./tendencias-restaurantes-futuro.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .boton {
-    background-color: #767638;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .todo{
-    position: relative;
-    display: inline-block;
-  }
-  .enlaces {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  .enlaces a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .enlaces a:hover { background-color:  #767638; color: white;}
-  .todo:hover .enlaces {
-    display: block;
-  }
-  .todo:hover .boton {
-    background-color: white; color: #767638;
-  }
-  .boton1{
-    background-color: #6E6E33;
-    color:white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .todo1{
-    position: relative;
-    display: inline-block;
-  }
-  .enlaces1 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  .enlaces1 a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .enlaces1 a:hover { background-color: #6E6E33; color: white;}
-  .todo1:hover .enlaces1 {
-    display: block;
-  }
-  .todo1:hover .boton1 {
-    background-color: white; color: #6E6E33;
-  }
-
-  .boton2{
-    background-color: #5D5D28;
-    color:white;
-    padding:16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .todo2{
-    position: relative;
-    display: inline-block;
-  }
-  .enlaces2 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  .enlaces2 a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .enlaces2 a:hover { background-color: #5D5D28; color: white;}
-  .todo2:hover .enlaces2 {
-    display: block;
-  }
-  .todo2:hover .boton2 {
-    background-color: white; color: #5D5D28;
-  }
-  iframe{
-    position: center;
-    border: none;
-  }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema de gestión para restaurantes - Punto de venta, sitio web y facturación">
+  <title>Sistema de Gestión Restaurante - Índice</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="todo">
-    <button class="boton" type="button" name="button">Punto de Venta</button>
-    <div class="enlaces">
-      <a href="#">Control de caja</a>
-      <a href="#">Configurar restaurante / bar</a>
-      <a href="#">Configurar gestión de mesas</a>
-      <a href="#">División de facturas a clientes</a>
-      <a href="#">Imprimir facturas</a>
-      <a href="./Integración_propinas/integrar_propinas.html" target="pantalla">Integrar Propinas en el pago</a>
-      <a href="./Impresión_ordenes/imprimir_ordenes.html" target="pantalla">Imprimir Ordenes de cocina y/o bar</a>
-      <a href="./Transferencia_cliente/transferir_cliente.html" target="pantalla">Transferir clientes entre mesas</a>
-      <a href="./Reimpresión/reimprimir.html" target="pantalla">Reimprimir recibos</a>
-      <a href="./Gestion_cajeros/gestionar_cajeros.html" target="pantalla">Gestionar varios cajeros</a>
-      <a href="./Pago Mercury/mercury pago.html" target="pantalla">Aceptar pagos con tarjeta de crédito mediante Mercury </a>
-      <a href="./Descuento/descuento.html" target="pantalla">Aplicar descuentos manuales</a>
-      <a href="./Happy hour/hora.html" target="pantalla">Configurar “happy hour”</a>
-    </div>
-  </div>
-  <div class="todo1">
-    <button class="boton1"type="button" name="button">Sitio Web</button>
-    <div class="enlaces1">
-      <a href="./SEO/SEOxD.html" target="pantalla">Cómo hacer la optimización de motores de búsqueda (SEO)</a>
-      <a href="./Análiticas Google/analiticasgoogle.html" target="pantalla">Cómo rastrear el tráfico de su sitio web en Google Analytics</a>
-      <a href="./Sitio web-tráfico visitas/sitioweb.html" target="pantalla">Cómo rastrear el tráfico de su sitio web</a>
-    </div>
-  </div>
-  <div class="todo2">
-    <button class="boton2" type="button" name="button">Facturacion y Contabilidad</button>
-    <div class="enlaces2">
-      <a href="./Transacciones de monedas/transacciones.html" target="pantalla">Transacciones en diferentes monedas</a>
-      <a href="./Cuentas cobra/cuentas.html" target="pantalla">Cuentas a cobrar y a pagar</a>
-      <a href="./Valoración de inventario/valoracion.html" target="pantalla">	Valoración del inventario</a>
-      <a href="./Obtener posición/obtenerposicion.html" target="pantalla">	Obtener de posición (como balance general, cuentas por pagar pasadas, cuentas por cobrar pasadas)</a>
-    </div>
-  </div>
-  <iframe name="pantalla" width="100%" height="900px"></iframe>
+  <a href="#main-content" class="skip-nav">Saltar al contenido principal</a>
+  
+  <header>
+    <nav aria-label="Navegación principal">
+      <!-- Point of Sale Section -->
+      <div class="dropdown-container pos-section" role="group" aria-labelledby="pos-menu">
+        <button class="dropdown-btn" type="button" aria-haspopup="true" aria-expanded="false" id="pos-menu">
+          Punto de Venta
+        </button>
+        <div class="dropdown-menu" role="menu">
+          <a href="#" role="menuitem">Control de caja</a>
+          <a href="#" role="menuitem">Configurar restaurante / bar</a>
+          <a href="#" role="menuitem">Configurar gestión de mesas</a>
+          <a href="#" role="menuitem">División de facturas a clientes</a>
+          <a href="#" role="menuitem">Imprimir facturas</a>
+          <a href="./Integración_propinas/integrar_propinas.html" target="main-frame" role="menuitem">Integrar Propinas en el pago</a>
+          <a href="./Impresión_ordenes/imprimir_ordenes.html" target="main-frame" role="menuitem">Imprimir Órdenes de cocina y/o bar</a>
+          <a href="./Transferencia_cliente/transferir_cliente.html" target="main-frame" role="menuitem">Transferir clientes entre mesas</a>
+          <a href="./Reimpresión/reimprimir.html" target="main-frame" role="menuitem">Reimprimir recibos</a>
+          <a href="./Gestion_cajeros/gestionar_cajeros.html" target="main-frame" role="menuitem">Gestionar varios cajeros</a>
+          <a href="./Pago Mercury/mercury pago.html" target="main-frame" role="menuitem">Aceptar pagos con tarjeta de crédito mediante Mercury</a>
+          <a href="./Descuento/descuento.html" target="main-frame" role="menuitem">Aplicar descuentos manuales</a>
+          <a href="./Happy hour/hora.html" target="main-frame" role="menuitem">Configurar "happy hour"</a>
+        </div>
+      </div>
+
+      <!-- Website Section -->
+      <div class="dropdown-container website-section" role="group" aria-labelledby="website-menu">
+        <button class="dropdown-btn" type="button" aria-haspopup="true" aria-expanded="false" id="website-menu">
+          Sitio Web
+        </button>
+        <div class="dropdown-menu" role="menu">
+          <a href="./SEO/SEOxD.html" target="main-frame" role="menuitem">Cómo hacer la optimización de motores de búsqueda (SEO)</a>
+          <a href="./Análiticas Google/analiticasgoogle.html" target="main-frame" role="menuitem">Cómo rastrear el tráfico de su sitio web en Google Analytics</a>
+          <a href="./Sitio web-tráfico visitas/sitioweb.html" target="main-frame" role="menuitem">Cómo rastrear el tráfico de su sitio web</a>
+        </div>
+      </div>
+
+      <!-- Billing and Accounting Section -->
+      <div class="dropdown-container billing-section" role="group" aria-labelledby="billing-menu">
+        <button class="dropdown-btn" type="button" aria-haspopup="true" aria-expanded="false" id="billing-menu">
+          Facturación y Contabilidad
+        </button>
+        <div class="dropdown-menu" role="menu">
+          <a href="./Transacciones de monedas/transacciones.html" target="main-frame" role="menuitem">Transacciones en diferentes monedas</a>
+          <a href="./Cuentas cobra/cuentas.html" target="main-frame" role="menuitem">Cuentas a cobrar y a pagar</a>
+          <a href="./Valoración de inventario/valoracion.html" target="main-frame" role="menuitem">Valoración del inventario</a>
+          <a href="./Obtener posición/obtenerposicion.html" target="main-frame" role="menuitem">Obtener posición (balance general, cuentas por pagar/cobrar)</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <iframe 
+      name="main-frame" 
+      class="content-frame"
+      title="Contenido principal"
+      aria-label="Marco de contenido principal">
+    </iframe>
+  </main>
 </body>
 </html>
